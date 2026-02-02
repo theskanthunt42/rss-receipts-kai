@@ -1,0 +1,13 @@
+{
+    "method": "USB",
+    "path": ["0x04b8", "0x0202"],
+    "feeds":[
+        "https://feeds.bbci.co.uk/news/world/rss.xml"
+    ],
+    "schedule":[
+        "08:00",
+        "12:00",
+        "18:00",
+        "22:00"
+    ]
+}

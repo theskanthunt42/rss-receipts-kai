@@ -1,19 +1,9 @@
-#!/usr/bin/env python3
-
 import feedparser
 import datetime
-#import sys
-#import textwrap
 import time
 import json
 from urllib.parse import urlparse
 import escpos.printer 
-#import schedule
-#from unidecode import unidecode
-
-NEWLINE = 128
-HR = 129
-
 
 def setup():
     try:
@@ -86,14 +76,12 @@ def PrintRSS(conf):
 
 def Job(conf):
     PrintRSS(conf)
-    return True
 
 
 def main():
-    while True:
-        conf = setup()
-        Job(conf)
-        time.sleep(21600)
+    conf = setup()
+    Job(conf)
+        #time.sleep(21600)
     
     #for i in conf["schedule"]:
     #    schedule.every().day.at(f"{i}").do(Job(conf), "Time to print.")
