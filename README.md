@@ -1,4 +1,4 @@
-rss-receipts
+rss-receipts-kai
 ============
 
 Simple Python script that fetches RSS feeds from a configuration file and prints 
